@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+  --cor-fundo: #232946;
+  --fonte-texto: "Source Sans 3", sans-serif;
+  --fonte-titulo: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-texto);
+}
+
+nav {
+  background-color: #f7f7f7;
+  border-radius: 67px;
+  padding: 12px 32px;
+  margin:24px 16px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content:space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-fundo);
+  font-size: 20px;
+}
+
+.ativo{
+    background-color: var(--cor-fundo);
+    color: #f7f7f7;
+    border-radius: 200px;
+    padding: 8px;
+}
