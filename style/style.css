@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
   --cor-fundo: #232946;
+  --cor-branco: #fffffe;
+  --cor-texto-secundario: #b8c1ec;
+  --cor-borda: #e5e5e5;
+  --cor-tag: #e3e3e3;
+  --cor-destaque: #eebbc3;
+
   --fonte-texto: "Source Sans 3", sans-serif;
   --fonte-titulo: "Nunito", sans-serif;
 }
+
 
 * {
   margin: 0;
@@ -51,7 +58,7 @@ a {
 }
 
 .hero-content h1 {
-  color: #fffffe;
+  color: var(--cor-branco);
   font-family: var(--fonte-titulo);
   font-weight: 300;
   font-size: 40px;
@@ -59,7 +66,7 @@ a {
 }
 
 .hero-content p {
-  color: #b8c1ec;
+  color: var(--cor-texto-secundario);
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
@@ -91,9 +98,9 @@ a {
   flex-direction: column;
   color: var(--cor-fundo);
 
-  background-color: #fffffe;
+  background-color: var(--cor-branco);
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--cor-borda);
   border-radius: 16px;
 
   padding: 32px;
@@ -124,8 +131,8 @@ a {
   display: flex;
   flex-direction: column;
   color: var(--cor-fundo);
-  background-color: #fffffe;
-  border: 1px solid #e5e5e5;
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-borda);
   border-radius: 16px;
   padding: 32px;
   gap: 24px;
@@ -136,6 +143,7 @@ a {
   font-family: var(--fonte-titulo);
   font-size: 36px;
   font-weight: 700;
+  line-height: 36px;
 }
 
 .project-card p {
@@ -144,21 +152,33 @@ a {
   line-height: 32px;
 }
 
+.image-card .project-tags{
+  margin-top: -8px;
+}
+
+.text-card {
+  height: auto;
+}
+
 .project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .project-link {
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 48px;
-  height: 48px;
-  background-color: #eebbc3;
+  width: 40px;
+  height: 40px;
+  background-color: var(--cor-destaque);
   border-radius: 50%;
+  
 }
 
 .project-link img {
@@ -198,12 +218,18 @@ a {
 }
 
 .project-tag {
-  background-color: #e3e3e3;
+  background-color: var(--cor-tag);
   border-radius: 80px;
   padding: 8px 16px;
   font-weight: 800;
   font-size: 16px;
   font-family: var(--fonte-titulo);
+  line-height: 16px;
+}
+
+.connect-tag{
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-secundario);
 }
 
 @media (min-width: 834px) {
