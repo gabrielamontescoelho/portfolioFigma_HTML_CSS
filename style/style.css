@@ -11,7 +11,6 @@
   --fonte-titulo: "Nunito", sans-serif;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -127,6 +126,12 @@ a {
   margin: 24px 16px 0;
 }
 
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -152,7 +157,7 @@ a {
   line-height: 32px;
 }
 
-.image-card .project-tags{
+.image-card .project-tags {
   margin-top: -8px;
 }
 
@@ -165,7 +170,6 @@ a {
 }
 
 .project-link {
-
   position: absolute;
   right: 0;
   top: 0;
@@ -178,7 +182,6 @@ a {
   height: 40px;
   background-color: var(--cor-destaque);
   border-radius: 50%;
-  
 }
 
 .project-link img {
@@ -186,22 +189,18 @@ a {
   height: 16px;
 }
 
-.project-image {
+.shop-image,
+.connect-image {
   width: 334px;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.shop-image{
+.shop-image {
   height: 240px;
 }
 
-.connect-image{
+.connect-image {
   height: 284px;
 }
 
@@ -227,7 +226,7 @@ a {
   line-height: 16px;
 }
 
-.connect-tag{
+.connect-tag {
   background-color: var(--cor-fundo);
   color: var(--cor-texto-secundario);
 }
@@ -252,7 +251,6 @@ a {
   .hero-content {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   .hero-content h1 {
@@ -288,5 +286,33 @@ a {
   .about-card {
     flex: 1;
     height: 100%;
+  }
+
+  .projects {
+    margin: 24px 80px 0;
+  }
+
+  .project-content {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .project-card {
+    height: 456px;
+  }
+
+  .image-card {
+    flex: 1;
+  }
+
+  .text-card {
+    width: 464px;
+    height: 456px;
+  }
+
+  .shop-image,
+  .connect-image {
+    width: 100%;
+    height: 272px;
   }
 }
